@@ -1,9 +1,18 @@
 .portrait img {
   height: 60vh;
 }
-.portrait {
-  text-align: center;
+
+.portfolio {
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-.about h1 {
-  text-align: center;
+
+.project-card img {
+  width: min(100%, 300px);
+  object-fit: contain;
+}
+.contact-img img {
+  max-width: 500px;
+  object-fit: contain;
 }
