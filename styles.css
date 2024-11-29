@@ -1,18 +1,37 @@
 .portrait img {
+  /* temp */
   height: 60vh;
 }
-
 .portfolio {
-  max-width: 1500px;
+  max-width: min(100%, 1280px);
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
+.project-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.project-desc {
+  padding: 15px 25px;
+}
 .project-card img {
-  width: min(100%, 300px);
+  margin: 0;
+  display: block;
+  width: 100%;
   object-fit: contain;
 }
 .contact-img img {
-  max-width: 500px;
+  /* temp */
+  width: 100%;
   object-fit: contain;
 }
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+/* style cards, then do the tablet layout */
